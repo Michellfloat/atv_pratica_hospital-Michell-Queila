@@ -38,7 +38,7 @@ export default function Header() {
         {/* CTA e Modo Escuro */}
         <div className="navbar-cta" style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
           <DarkModeToggle /> {/* Seu componente inserido com sucesso aqui! */}
-          <Link to="/contact" className="btn-schedule">
+          <Link to="/schedule" className="btn-schedule">
             Agendar Consulta
           </Link>
         </div>

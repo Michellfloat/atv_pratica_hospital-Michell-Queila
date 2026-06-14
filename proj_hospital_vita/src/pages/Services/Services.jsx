@@ -26,7 +26,7 @@ export default function Services() {
               <div className="service-icon-box">{spec.icon}</div>
               <h3>{spec.name}</h3>
               <p>{spec.desc}</p>
-              <Link to="/contact" className="service-link">Agendar Consulta &rarr;</Link>
+              <Link to="/schedule" className="service-link">Agendar Consulta &rarr;</Link>
             </div>
           ))}
         </div>

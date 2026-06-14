@@ -12,6 +12,7 @@ import Contact from './pages/Contact/Contact'
 import Blog from './pages/Blog/Blog'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
+import Schedule from './pages/Schedule/Schedule'
 
 function App() {
   
@@ -31,6 +32,7 @@ function App() {
             <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/schedule" element={<Schedule />} />
           </Routes>
         </main>
 

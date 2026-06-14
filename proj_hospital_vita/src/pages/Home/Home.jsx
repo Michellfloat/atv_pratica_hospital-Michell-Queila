@@ -14,7 +14,7 @@ export default function Home() {
             A VitaClínica une tecnologia diagnóstica de ponta a um corpo clínico altamente qualificado para oferecer consultas e exames com máxima precisão.
           </p>
           <div className="hero-actions">
-            <Link to="/contact" className="btn-primary-cta">
+            <Link to="/schedule" className="btn-primary-cta">
               Agendar Consulta
             </Link>
             <Link to="/services" className="btn-secondary-cta">
