@@ -29,18 +29,18 @@ Siga as instruções abaixo para clonar o repositório, instalar as dependência
 Abra o seu terminal (Git Bash, Prompt ou Terminal do VS Code) e execute o comando para baixar o projeto:
 ```bash
 git clone [https://github.com/Michellfloat/atv-dupla-git-hub.git](https://github.com/Michellfloat/atv-dupla-git-hub.git)
-
-instalar o node_modules
+```
+### Passo 2:instalar o node_modules
 ```
 'npm i' ou 'npm run dev'
 ```
+### Passo 3:inserir o router-dom
 
-inserir o router-dom
 ```
 npm i react-router-dom
 ```
 
-Executar o código funcionando
+### Passo 4:Executar o projeto
 ```
 npm run dev
 ```
