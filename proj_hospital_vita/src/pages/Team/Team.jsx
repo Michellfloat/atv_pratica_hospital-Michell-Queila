@@ -3,10 +3,10 @@ import './style.css';
 
 export default function Team() {
   const doctors = [
-    { id: 1, name: 'Dr. Henrique Silva', role: 'Cardiologista', crm: 'CRM/SP 123456', avatar: '👨‍⚕️' },
+    { id: 1, name: 'Dr. Michell Silva', role: 'Cardiologista', crm: 'CRM/SP 123456', avatar: '👨‍⚕️' },
     { id: 2, name: 'Dra. Mariana Costa', role: 'Pediatra', crm: 'CRM/SP 789101', avatar: '👩‍⚕️' },
     { id: 3, name: 'Dr. Carlos Eduardo', role: 'Ortopedista', crm: 'CRM/SP 112131', avatar: '👨‍⚕️' },
-    { id: 4, name: 'Dra. Beatriz Ramos', role: 'Ginecologista', crm: 'CRM/SP 141516', avatar: '👩‍⚕️' }
+    { id: 4, name: 'Dra. Queila Leal', role: 'Ginecologista', crm: 'CRM/SP 141516', avatar: '👩‍⚕️' }
   ];
 
   return (

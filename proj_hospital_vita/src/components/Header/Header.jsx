@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import './style.css'; // Criaremos este arquivo na estilização das páginas
 
-export default function Navbar() {
+export default function Header() {
   return (
     <header className="navbar-header">
       <div className="navbar-container">

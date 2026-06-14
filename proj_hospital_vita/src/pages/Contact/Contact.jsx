@@ -49,7 +49,7 @@ export default function Contact() {
             <span className="info-icon">📍</span>
             <div>
               <strong>Endereço</strong>
-              <p>Av. Paulista, 1000 - 4º Andar<br />Bela Vista, São Paulo - SP</p>
+              <p>Av. Dedenzeiros, xxxx - 4º Andar<br />Dedenzeiros, Bahia  - BA</p>
             </div>
           </div>
           <div className="info-item">

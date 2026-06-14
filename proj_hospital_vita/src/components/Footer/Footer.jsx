@@ -30,7 +30,7 @@ export default function Footer() {
           <h4>Atendimento</h4>
           <p>📞 (11) 4004-1234</p>
           <p>✉️ contato@vitaclinica.com.br</p>
-          <p>📍 Av. Paulista, 1000 - São Paulo, SP</p>
+          <p>📍 Av. Dedenzeiros, xxxx - Salvador, Bahia, BA</p>
         </div>
       </div>
 

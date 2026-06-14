@@ -1,0 +1,109 @@
+/* ==========================================================================
+   COMPONENT STYLE: Navbar
+   ========================================================================== */
+
+.navbar-header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* --- Logo --- */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logo-icon {
+  font-size: 1.75rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.03em;
+}
+
+.logo-accent {
+  color: #0284c7; /* Nosso Azul Confiança */
+  font-weight: 600;
+}
+
+/* --- Menu de Links --- */
+.navbar-navigation {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #64748b;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #0284c7;
+}
+
+/* Estado Ativo injetado pelo NavLink do React Router */
+.nav-link.active {
+  color: #0284c7;
+  font-weight: 600;
+  border-bottom-color: #0284c7;
+}
+
+/* --- Botão CTA --- */
+.btn-schedule {
+  background-color: #10b981; /* Verde Suave focado em conversão de consultas */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(16, 185, 129, 0.1);
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.btn-schedule:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
+
+/* --- Responsividade Desktop --- */
+@media (min-width: 768px) {
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.25rem 2rem;
+    gap: 0;
+  }
+
+  .navbar-navigation {
+    gap: 2rem;
+  }
+}

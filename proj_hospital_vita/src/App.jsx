@@ -3,6 +3,15 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Services from './pages/Services/Services'
+import Team from './pages/Team/Team'
+import Contact from './pages/Contact/Contact'
+import Blog from './pages/Blog/Blog'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
 
 function App() {
   
@@ -11,7 +20,7 @@ function App() {
     <>
       <div className="app-container">
         {/* Componente Global de Navegação */}
-        <Navbar />
+        <Header />
 
         {/* Orquestrador de Conteúdo Dinâmico */}
         <main className="main-content">
