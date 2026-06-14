@@ -1,0 +1,65 @@
+.services-grid-container {
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: #0284c7;
+  box-shadow: 0 10px 15px -3px rgba(2, 132, 199, 0.05);
+}
+
+.service-icon-box {
+  font-size: 2rem;
+  background-color: #f0f7ff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.service-card h3 { font-size: 1.25rem; color: #0f172a; margin-bottom: 0.5rem; }
+.service-card p { color: #475569; font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.5rem; }
+
+.service-link {
+  text-decoration: none;
+  color: #0284c7;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.exams-banner {
+  background-color: #f0fdf4;
+  border-top: 1px solid #bbf7d0;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.exams-content { max-width: 700px; margin: 0 auto; }
+.exams-content h2 { font-size: 1.75rem; color: #065f46; margin-bottom: 1rem; }
+.exams-content p { color: #1e293b; margin-bottom: 2rem; line-height: 1.6; }
+
+@media (min-width: 768px) {
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(3, 1fr); }
+}

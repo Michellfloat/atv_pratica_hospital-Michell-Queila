@@ -1,0 +1,69 @@
+.about-page { width: 100%; }
+
+.page-intro {
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background-color: #f8fafc;
+}
+
+.page-intro h1 { font-size: 2.5rem; color: #0f172a; margin-bottom: 0.5rem; }
+.page-intro p { color: #64748b; font-size: 1.1rem; }
+
+.history-section {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 1.5rem;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.history-text h2 { font-size: 2rem; color: #0f172a; margin-bottom: 1.5rem; }
+.history-text p { color: #475569; line-height: 1.7; margin-bottom: 1rem; font-size: 1.05rem; }
+
+.history-image-placeholder {
+  flex: 1;
+  min-height: 300px;
+  background: linear-gradient(135deg, #0284c7 0%, #1e3a8a 100%);
+  border-radius: 16px;
+  position: relative;
+}
+
+.info-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.mvv-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto 4rem auto;
+}
+
+.mvv-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.mvv-icon { font-size: 3rem; margin-bottom: 1rem; }
+.mvv-card h3 { font-size: 1.4rem; color: #0f172a; margin-bottom: 0.75rem; }
+.mvv-card p { color: #475569; line-height: 1.6; }
+
+@media (min-width: 768px) {
+  .history-section { flex-direction: row; align-items: center; }
+  .history-text, .history-image-placeholder { flex: 1; }
+  .mvv-section { grid-template-columns: repeat(3, 1fr); }
+}

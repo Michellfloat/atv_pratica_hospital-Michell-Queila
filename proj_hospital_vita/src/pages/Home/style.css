@@ -1,0 +1,309 @@
+/* ==========================================================================
+   PAGE STYLE: Home (VitaClínica)
+   ========================================================================== */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* --- 1. HERO SECTION --- */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  gap: 3rem;
+  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+}
+
+.hero-content {
+  max-width: 600px;
+  text-align: center;
+}
+
+.badge-excellence {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-primary-cta {
+  background-color: #0284c7; /* Azul Confiança */
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.btn-primary-cta:hover {
+  background-color: #0369a1;
+  transform: translateY(-2px);
+}
+
+.btn-primary-cta.green-variation {
+  background-color: #10b981; /* Verde Suave para Saúde/Conversão */
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.btn-primary-cta.green-variation:hover {
+  background-color: #059669;
+}
+
+.btn-secondary-cta {
+  background-color: transparent;
+  color: #0284c7;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #0284c7;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+}
+
+.btn-secondary-cta:hover {
+  background-color: rgba(2, 132, 199, 0.05);
+}
+
+.hero-visual {
+  width: 100%;
+  max-width: 500px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.visual-card {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #38bdf8 0%, #0369a1 100%);
+  border-radius: 24px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.floating-badge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.floating-badge .icon {
+  font-size: 1.5rem;
+}
+
+.floating-badge strong {
+  display: block;
+  color: #0f172a;
+  font-size: 0.9rem;
+}
+
+.floating-badge small {
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+/* --- 2. METRICS SECTION --- */
+.metrics-section {
+  background-color: #0f172a; /* Slate Escuro corporativo */
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  border-radius: 16px;
+  margin: 0 1rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.metric-item h2 {
+  font-size: 2.5rem;
+  color: #38bdf8; /* Azul claro para contraste */
+  margin: 0 0 0.25rem 0;
+  font-weight: 800;
+}
+
+.metric-item p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* --- 3. PILLARS SECTION --- */
+.pillars-section {
+  padding: 5rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.section-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.pillar-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.05);
+}
+
+.pillar-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.pillar-card h3 {
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.pillar-card p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* --- 4. CTA CLOSURE --- */
+.cta-closure-section {
+  padding: 5rem 1.5rem;
+  background-color: #f0fdf4; /* Fundo verde bem suave */
+  border-top: 1px solid #dcfce7;
+  text-align: center;
+}
+
+.cta-closure-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.cta-closure-content h2 {
+  font-size: 2rem;
+  color: #065f46; /* Verde Escuro */
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-closure-content p {
+  color: #374151;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (RESPONSIVIDADE)
+   ========================================================================== */
+
+@media (min-width: 768px) {
+  .hero-section {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+    text-align: left;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .hero-visual {
+    height: 400px;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .metrics-section {
+    margin: 0 auto;
+    width: calc(100% - 4rem);
+  }
+
+  .pillars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
