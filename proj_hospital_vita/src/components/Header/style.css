@@ -1,15 +1,20 @@
-/* ==========================================================================
-   COMPONENT STYLE: Navbar
-   ========================================================================== */
-
 .navbar-header {
   width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e2e8f0;
+  /* Usa as variáveis globais que definimos no index.css */
+  background-color: var(--bg-principal);
+  border-bottom: 1px solid var(--texto-secundario);
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  /* Transição suave ao alternar os modos */
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajuste sutil na sombra e borda para o Modo Escuro */
+body.dark-mode .navbar-header {
+  border-bottom-color: #2d3748;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .navbar-container {
@@ -37,12 +42,13 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: 800;
-  color: #0f172a;
+  color: var(--texto-principal); /* Cor adaptativa */
   letter-spacing: -0.03em;
+  transition: color 0.3s ease;
 }
 
 .logo-accent {
-  color: #0284c7; /* Nosso Azul Confiança */
+  color: #0284c7; /* Mantém o Azul Confiança institucional */
   font-weight: 600;
 }
 
@@ -56,7 +62,7 @@
 
 .nav-link {
   text-decoration: none;
-  color: #64748b;
+  color: var(--texto-secundario); /* Cor adaptativa para links inativos */
   font-weight: 500;
   font-size: 0.95rem;
   padding: 0.25rem 0;
@@ -65,7 +71,7 @@
 }
 
 .nav-link:hover {
-  color: #0284c7;
+  color: #0284c7; /* Destaque no hover */
 }
 
 /* Estado Ativo injetado pelo NavLink do React Router */
@@ -77,8 +83,8 @@
 
 /* --- Botão CTA --- */
 .btn-schedule {
-  background-color: #10b981; /* Verde Suave focado em conversão de consultas */
-  color: #ffffff;
+  background-color: #10b981; /* Verde Suave de conversão */
+  color: #ffffff !important; /* Garante texto branco em ambos os modos */
   text-decoration: none;
   padding: 0.6rem 1.25rem;
   border-radius: 6px;
