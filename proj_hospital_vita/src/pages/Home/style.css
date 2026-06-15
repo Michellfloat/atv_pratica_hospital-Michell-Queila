@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PAGE STYLE: Home (VitaClínica)
+   PAGE STYLE: Home (VitaClínica) - Adaptado para Modo Claro e Escuro
    ========================================================================== */
 
 .home-page {
@@ -15,7 +15,13 @@
   align-items: center;
   padding: 4rem 1.5rem;
   gap: 3rem;
-  background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
+  /* Gradiente adaptável: Claro (azul suave para branco) / Escuro (grafite para preto) */
+  background: linear-gradient(180deg, #f0f7ff 0%, var(--bg-principal) 100%);
+  transition: background 0.3s ease;
+}
+
+body.dark-mode .hero-section {
+  background: linear-gradient(180deg, #1a202c 0%, var(--bg-principal) 100%);
 }
 
 .hero-content {
@@ -32,22 +38,30 @@
   font-weight: 600;
   display: inline-block;
   margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .badge-excellence {
+  background-color: #0c4a6e;
+  color: #38bdf8;
 }
 
 .hero-content h1 {
   font-size: 2.5rem;
-  color: #0f172a;
+  color: var(--texto-principal);
   line-height: 1.2;
   margin-bottom: 1.25rem;
   font-weight: 800;
   letter-spacing: -0.02em;
+  transition: color 0.3s ease;
 }
 
 .hero-content p {
   font-size: 1.1rem;
-  color: #475569;
+  color: var(--texto-secundario);
   line-height: 1.6;
   margin-bottom: 2rem;
+  transition: color 0.3s ease;
 }
 
 .hero-actions {
@@ -59,7 +73,7 @@
 
 .btn-primary-cta {
   background-color: #0284c7; /* Azul Confiança */
-  color: #ffffff;
+  color: #ffffff !important;
   padding: 0.9rem 2rem;
   border-radius: 8px;
   font-weight: 600;
@@ -75,7 +89,7 @@
 }
 
 .btn-primary-cta.green-variation {
-  background-color: #10b981; /* Verde Suave para Saúde/Conversão */
+  background-color: #10b981; /* Verde Suave para Conversão */
   box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
 }
 
@@ -93,6 +107,11 @@
   border: 2px solid #0284c7;
   transition: all 0.2s ease-in-out;
   text-align: center;
+}
+
+body.dark-mode .btn-secondary-cta {
+  color: #38bdf8;
+  border-color: #38bdf8;
 }
 
 .btn-secondary-cta:hover {
@@ -123,13 +142,18 @@
   position: absolute;
   bottom: 24px;
   left: 24px;
-  background-color: #ffffff;
+  background-color: var(--bg-principal);
   padding: 1rem;
   border-radius: 16px;
   display: flex;
   align-items: center;
   gap: 0.75rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode .floating-badge {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
 .floating-badge .icon {
@@ -138,18 +162,20 @@
 
 .floating-badge strong {
   display: block;
-  color: #0f172a;
+  color: var(--texto-principal);
   font-size: 0.9rem;
+  transition: color 0.3s ease;
 }
 
 .floating-badge small {
-  color: #64748b;
+  color: var(--texto-secundario);
   font-size: 0.75rem;
+  transition: color 0.3s ease;
 }
 
-/* --- 2. METRICS SECTION --- */
+/* --- 2. METRICS SECTION (Mantém o fundo escuro original) --- */
 .metrics-section {
-  background-color: #0f172a; /* Slate Escuro corporativo */
+  background-color: #0f172a; 
   color: #ffffff;
   padding: 3rem 1.5rem;
   border-radius: 16px;
@@ -167,7 +193,7 @@
 
 .metric-item h2 {
   font-size: 2.5rem;
-  color: #38bdf8; /* Azul claro para contraste */
+  color: #38bdf8;
   margin: 0 0 0.25rem 0;
   font-weight: 800;
 }
@@ -192,14 +218,16 @@
 
 .section-header h2 {
   font-size: 2rem;
-  color: #0f172a;
+  color: var(--texto-principal);
   font-weight: 700;
   margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
 }
 
 .section-header p {
-  color: #64748b;
+  color: var(--texto-secundario);
   font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
 .pillars-grid {
@@ -209,16 +237,24 @@
 }
 
 .pillar-card {
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background-color: var(--bg-card);
+  border: 1px solid var(--texto-secundario);
   border-radius: 16px;
   padding: 2.5rem 2rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode .pillar-card {
+  border-color: #2d3748;
 }
 
 .pillar-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.05);
+}
+
+body.dark-mode .pillar-card:hover {
+  box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.4);
 }
 
 .pillar-icon {
@@ -228,23 +264,31 @@
 
 .pillar-card h3 {
   font-size: 1.3rem;
-  color: #0f172a;
+  color: var(--texto-principal);
   margin-bottom: 0.75rem;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .pillar-card p {
-  color: #475569;
+  color: var(--texto-secundario);
   font-size: 0.95rem;
   line-height: 1.5;
+  transition: color 0.3s ease;
 }
 
 /* --- 4. CTA CLOSURE --- */
 .cta-closure-section {
   padding: 5rem 1.5rem;
-  background-color: #f0fdf4; /* Fundo verde bem suave */
+  background-color: #f0fdf4; /* Fundo verde suave no modo claro */
   border-top: 1px solid #dcfce7;
   text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode .cta-closure-section {
+  background-color: #064e3b; /* Verde bem escuro para o modo escuro */
+  border-top-color: #047857;
 }
 
 .cta-closure-content {
@@ -254,15 +298,25 @@
 
 .cta-closure-content h2 {
   font-size: 2rem;
-  color: #065f46; /* Verde Escuro */
+  color: #065f46; 
   font-weight: 700;
   margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .cta-closure-content h2 {
+  color: #34d399; /* Verde menta brilhante para contraste */
 }
 
 .cta-closure-content p {
   color: #374151;
   font-size: 1.1rem;
   margin-bottom: 2rem;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .cta-closure-content p {
+  color: #e6f4ea;
 }
 
 /* ==========================================================================
